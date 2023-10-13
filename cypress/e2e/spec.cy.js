@@ -85,7 +85,6 @@ describe('GET methods', () => {
             expect(response.status).eq(200);
             expect(response.body.id).eq(collection_id);
             expect(response.body.title).eq(testData.new_title);
-            console.log(response.body)
         })
     })
 
