@@ -1,0 +1,4 @@
+videos/
+node_modules/
+cypress/fixtures/testData.json
+cypress/.DS_Store

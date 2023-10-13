@@ -1,0 +1,16 @@
+{
+  "name": "cypress_api",
+  "version": "1.0.0",
+  "description": "API testing for ",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/olpapina/cypress_api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.7.0",
+    "cypress-plugin-api": "^2.11.1"
+  }
+}
