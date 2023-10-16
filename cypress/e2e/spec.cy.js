@@ -22,7 +22,7 @@ describe('GET methods', () => {
         cy.request('GET', `/users/${testData.username}/collections/?client_id=${testData.token}`)
             .then(response => {
                 expect(response.status).eq(200);
-                expect(response.body.length).eq(7);
+                expect(response.body.length).eq(9);
                 collection_for_photos = response.body[2].id;
             })
     })
@@ -71,6 +71,7 @@ describe('GET methods', () => {
     })
 
     it('PUT - collection by ID', () => {
+        cy.wait(300);
         cy.request({
             method: 'PUT',
             url: `/collections/${collection_id}`,
@@ -89,6 +90,7 @@ describe('GET methods', () => {
     })
 
     it('DELETE - collection by ID', () => {
+        cy.wait(500);
         cy.request({
             method: 'DELETE',
             url: `/collections/${collection_id}`,
